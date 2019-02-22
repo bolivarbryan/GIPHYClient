@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyGif
+import SwiftGifOrigin
 
 class GIPHYCollectionViewCell: UICollectionViewCell {
     var item: GiphyItem? {
@@ -17,8 +17,6 @@ class GIPHYCollectionViewCell: UICollectionViewCell {
                 let url = item.image.preview.url
                 else { return }
 
-            print(url)
-
             getData(from: url) { data, response, error in
                 guard
                     let data = data,
@@ -26,12 +24,12 @@ class GIPHYCollectionViewCell: UICollectionViewCell {
                     else { return }
 
                 DispatchQueue.main.async() {
-                    self.gifImageView.image = UIImage(gifData: data)
+                    self.gifImageView.image = UIImage.gif(data: data)
                 }
             }
         }
     }
-    
+
     @IBOutlet weak var gifImageView: UIImageView!
 
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {

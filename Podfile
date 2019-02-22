@@ -1,7 +1,7 @@
 target 'GIPHYClient' do
   use_frameworks!
 
-  pod 'SwiftyGif'
+  pod 'SwiftGifOrigin'
 
   target 'GIPHYClientTests' do
     inherit! :search_paths

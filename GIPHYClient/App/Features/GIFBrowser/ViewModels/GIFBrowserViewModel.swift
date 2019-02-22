@@ -22,7 +22,7 @@ class GIFBrowserViewModel {
     }
 
     func fetchItems() {
-        let service = GIPHYAPIService.trending(25)
+        let service = GIPHYAPIService.trending(100)
         service.sendRequest { (data) in
             print(data)
             do {

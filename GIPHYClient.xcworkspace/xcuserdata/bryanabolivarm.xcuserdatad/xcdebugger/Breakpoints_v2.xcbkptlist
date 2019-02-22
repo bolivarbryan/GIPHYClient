@@ -58,45 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Controllers/GIFBrowserViewController/GIFBrowserViewController.swift"
-            timestampString = "572511040.960193"
+            timestampString = "572511587.066775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "didUpdateDatasource()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GIPHYClient/App/Features/GIFBrowser/Controllers/GIFBrowserViewController/GIFBrowserViewController+CollectionView.swift"
-            timestampString = "572511040.9602571"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GIPHYClient/App/Features/GIFBrowser/Controllers/GIFBrowserViewController/GIFBrowserViewController+CollectionView.swift"
-            timestampString = "572511040.960339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "26"
+            endingLineNumber = "26">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.960436"
+            timestampString = "572511587.06686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "item"
             landmarkType = "24">
          </BreakpointContent>
@@ -122,7 +88,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.960489"
+            timestampString = "572511587.0669301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -138,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.960533"
+            timestampString = "572511587.066994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "item"
             landmarkType = "24">
             <Locations>
@@ -186,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.960586"
+            timestampString = "572511587.0670559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "item"
             landmarkType = "24">
          </BreakpointContent>
@@ -202,7 +168,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.960626"
+            timestampString = "572511587.0671231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -218,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
-            timestampString = "572511040.9606659"
+            timestampString = "572511587.067183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "item"
             landmarkType = "24">
             <Locations>
@@ -257,6 +223,22 @@
                   offsetFromSymbolStart = "44">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIPHYClient/App/Features/GIFBrowser/Views/GIPHYCollectionViewCell.swift"
+            timestampString = "572511587.06724"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "item"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
