@@ -21,7 +21,7 @@ enum DatabaseError: Error {
 
 enum DatabaseEndpoint: DatabaseRequest {
     case listImages
-    case newImage(imageData: Data)
+    case newImage(imageData: Data, url: String)
 
     func fetch(completion: ([Any]) -> ()) {
         switch self {
@@ -36,8 +36,8 @@ enum DatabaseEndpoint: DatabaseRequest {
 
     func save() {
         switch self {
-        case let .newImage(image):
-            saveImage(newImageData: image)
+        case let .newImage(data, url):
+            saveImage(newImageData: data, url: url)
         default:
             assertionFailure("Invalid endpoint used \(self)")
         }
@@ -76,10 +76,11 @@ extension DatabaseEndpoint {
         return appDelegate.persistentContainer.viewContext
     }
 
-    func saveImage(newImageData: Data) {
+    func saveImage(newImageData: Data, url: String) {
         let entity = NSEntityDescription.entity(forEntityName: "ImageEntity", in: context)
         let imageManagedObject = NSManagedObject(entity: entity!, insertInto: context)
         imageManagedObject.setValue(newImageData, forKey: "data")
+        imageManagedObject.setValue(url, forKey: "url")
         try? context.save()
     }
 

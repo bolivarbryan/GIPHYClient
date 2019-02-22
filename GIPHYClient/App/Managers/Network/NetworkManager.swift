@@ -83,7 +83,6 @@ extension GIPHYAPIService {
             guard
                 let data = data
                 else {
-                    assertionFailure("Got nil response, \(error?.localizedDescription ?? nil)")
                     return
             }
 

@@ -23,9 +23,7 @@ extension GIFBrowserViewController: UICollectionViewDataSource {
     }
 }
 
-extension GIFBrowserViewController: UICollectionViewDelegate {
-
-}
+extension GIFBrowserViewController: UICollectionViewDelegate { }
 
 extension GIFBrowserViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,

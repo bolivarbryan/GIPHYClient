@@ -9,23 +9,12 @@
 import Foundation
 
 struct GiphyItem: Codable {
-    let type: String
     let id: String
-    let slug: String
-    let url: String
-    let username: String
-    let source: String
-    let rating: String
     let image: GiphyImage
-    let title: String
-    let score: Int
 
     enum CodingKeys: String, CodingKey {
-        case type, id, slug, url
-        case username, source, rating
+        case id
         case image = "images"
-        case title
-        case score = "_score"
     }
 }
 
@@ -37,6 +26,11 @@ struct GiphyImage: Codable {
         case original
         case preview = "preview_gif"
     }
+
+    var dataRepresentation: Data? {
+        let data = try? JSONEncoder().encode(self)
+        return data
+    }
 }
 
 struct Image: Codable {
@@ -46,8 +40,15 @@ struct Image: Codable {
         return URL(string: urlString)
     }
 
+    var data: Data? = nil
+
     enum CodingKeys: String, CodingKey {
         case urlString = "url"
+    }
+
+    init?(from dictionary: [String: Any]) {
+        self.urlString = dictionary["url"] as? String ?? ""
+        self.data = dictionary["data"] as? Data
     }
 }
 
