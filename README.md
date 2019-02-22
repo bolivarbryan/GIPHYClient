@@ -4,7 +4,7 @@ This Client fetches GIF images from `giphy.com`. By using it you can see the mos
 
 ## App Architecture
 
-- This Project was built with **MVVM** Architecture using **Reactive Patterns**
+- This Project was built with **MVVM** Architecture
 - Included **CoreData** as Persistency Manager
 
 
