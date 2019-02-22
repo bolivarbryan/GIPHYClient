@@ -8,11 +8,6 @@
 
 import Foundation
 
-struct GIFResponse: Codable {
-    let data: [GiphyItem]
-    let pagination: Pagination
-}
-
 struct GiphyItem: Codable {
     let type: String
     let id: String
@@ -45,10 +40,15 @@ struct GiphyImage: Codable {
 }
 
 struct Image: Codable {
-    let url: String
-    let width: String
-    let height: String
-    let size: String?
+    let urlString: String
+
+    var url: URL? {
+        return URL(string: urlString)
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case urlString = "url"
+    }
 }
 
 struct Pagination: Codable {

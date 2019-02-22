@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		130CFBA6DBE67E2900C776B7 /* Pods_GIPHYClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27765A14FB37E06E5604D84 /* Pods_GIPHYClient.framework */; };
 		3BAE34383A8AEC882C274AC3 /* Pods_GIPHYClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037246638492911598F60E3C /* Pods_GIPHYClientTests.framework */; };
+		F4C067AA221FCEE40000E2D2 /* GIFBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C067A9221FCEE40000E2D2 /* GIFBrowserViewModel.swift */; };
 		F4E6D501221FB01D00A9980E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D500221FB01D00A9980E /* AppDelegate.swift */; };
 		F4E6D509221FB01D00A9980E /* GIPHYClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D507221FB01D00A9980E /* GIPHYClient.xcdatamodeld */; };
 		F4E6D50B221FB01E00A9980E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E6D50A221FB01E00A9980E /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 		F4E6D52D221FBE0400A9980E /* GIFBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D52C221FBE0400A9980E /* GIFBrowserViewController.swift */; };
 		F4E6D532221FBE3200A9980E /* GIFBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6D531221FBE3200A9980E /* GIFBrowser.storyboard */; };
 		F4E6D535221FC09600A9980E /* GiphyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D534221FC09600A9980E /* GiphyItem.swift */; };
+		F4E6D537221FC97400A9980E /* GIPHYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D536221FC97400A9980E /* GIPHYCollectionViewCell.swift */; };
+		F4E6D539221FC9EE00A9980E /* GIFBrowserViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6D538221FC9EE00A9980E /* GIFBrowserViewController+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 		E27765A14FB37E06E5604D84 /* Pods_GIPHYClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIPHYClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87C961EDF0FDCFBEDC5A10 /* Pods-GIPHYClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIPHYClientTests/Pods-GIPHYClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C9D33270BAB9825BD5F2B4 /* Pods-GIPHYClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIPHYClient/Pods-GIPHYClient.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C067A9221FCEE40000E2D2 /* GIFBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFBrowserViewModel.swift; sourceTree = "<group>"; };
 		F4E6D4FD221FB01D00A9980E /* GIPHYClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIPHYClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E6D500221FB01D00A9980E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E6D508221FB01D00A9980E /* GIPHYClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GIPHYClient.xcdatamodel; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		F4E6D52C221FBE0400A9980E /* GIFBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFBrowserViewController.swift; sourceTree = "<group>"; };
 		F4E6D531221FBE3200A9980E /* GIFBrowser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GIFBrowser.storyboard; sourceTree = "<group>"; };
 		F4E6D534221FC09600A9980E /* GiphyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyItem.swift; sourceTree = "<group>"; };
+		F4E6D536221FC97400A9980E /* GIPHYCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIPHYCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4E6D538221FC9EE00A9980E /* GIFBrowserViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIFBrowserViewController+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,15 @@
 				14E80D14B621489409C61CF0 /* Pods-GIPHYClientTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4C067AB221FCFC30000E2D2 /* GIFBrowserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6D52C221FBE0400A9980E /* GIFBrowserViewController.swift */,
+				F4E6D538221FC9EE00A9980E /* GIFBrowserViewController+CollectionView.swift */,
+			);
+			path = GIFBrowserViewController;
 			sourceTree = "<group>";
 		};
 		F4E6D4F4221FB01D00A9980E = {
@@ -197,7 +212,7 @@
 		F4E6D52E221FBE1500A9980E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4E6D52C221FBE0400A9980E /* GIFBrowserViewController.swift */,
+				F4C067AB221FCFC30000E2D2 /* GIFBrowserViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +220,7 @@
 		F4E6D52F221FBE1D00A9980E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F4C067A9221FCEE40000E2D2 /* GIFBrowserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F4E6D531221FBE3200A9980E /* GIFBrowser.storyboard */,
+				F4E6D536221FC97400A9980E /* GIPHYCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +403,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E6D537221FC97400A9980E /* GIPHYCollectionViewCell.swift in Sources */,
+				F4E6D539221FC9EE00A9980E /* GIFBrowserViewController+CollectionView.swift in Sources */,
+				F4C067AA221FCEE40000E2D2 /* GIFBrowserViewModel.swift in Sources */,
 				F4E6D52B221FB22100A9980E /* NetworkManager.swift in Sources */,
 				F4E6D509221FB01D00A9980E /* GIPHYClient.xcdatamodeld in Sources */,
 				F4E6D52D221FBE0400A9980E /* GIFBrowserViewController.swift in Sources */,
