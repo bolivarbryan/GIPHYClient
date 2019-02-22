@@ -113,6 +113,13 @@
 			path = GIFBrowserViewController;
 			sourceTree = "<group>";
 		};
+		F4C067B2221FE5340000E2D2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		F4E6D4F4221FB01D00A9980E = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +228,7 @@
 		F4E6D52E221FBE1500A9980E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F4C067B2221FE5340000E2D2 /* New Group */,
 				F4C067AB221FCFC30000E2D2 /* GIFBrowserViewController */,
 			);
 			path = Controllers;
