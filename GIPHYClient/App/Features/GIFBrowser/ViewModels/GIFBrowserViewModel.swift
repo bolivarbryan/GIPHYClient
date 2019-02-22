@@ -24,13 +24,16 @@ class GIFBrowserViewModel {
     func fetchItems() {
         let service = GIPHYAPIService.trending(100)
         service.sendRequest { (data) in
-            print(data)
-            do {
-                let items = try JSONDecoder().decode(GIFResponse.self, from: data)
-                self.datasource = items.data
-            } catch {
-                print(error.localizedDescription)
-            }
+            self.decodeImages(from: data)
+        }
+    }
+
+    func decodeImages(from data: Data) {
+        do {
+            let items = try JSONDecoder().decode(GIFResponse.self, from: data)
+            self.datasource = items.data
+        } catch {
+            print(error.localizedDescription)
         }
     }
 }

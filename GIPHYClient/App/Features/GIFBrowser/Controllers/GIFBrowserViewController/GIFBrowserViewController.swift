@@ -9,7 +9,7 @@
 import UIKit
 
 class GIFBrowserViewController: UIViewController {
-    
+
     @IBOutlet weak var collectionView: UICollectionView!
     let viewModel = GIFBrowserViewModel()
 
@@ -17,6 +17,7 @@ class GIFBrowserViewController: UIViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         viewModel.fetchItems()
+        title = Language.appName.localized
     }
 }
 
